@@ -10,6 +10,42 @@ public class Task03Main {
     }
 
     static String getNameOfWeekDays(int weekDaysNumber) {
-        return "";//todo напишите здесь свою корректную реализацию этого метода, вместо существующей
+        String nameWeekDay = "";
+        switch(weekDaysNumber)
+        {
+        case 1:
+            nameWeekDay = "понедельник";
+            break;
+
+        case 2:
+            nameWeekDay = "вторник";
+            break;
+
+        case 3:
+            nameWeekDay = "среда";
+            break;
+
+        case 4:
+            nameWeekDay = "четверг";
+            break;
+
+        case 5:
+            nameWeekDay = "пятница";
+            break;
+
+        case 6:
+            nameWeekDay = "суббота";
+            break;
+
+        case 7:
+            nameWeekDay = "воскресенье";
+            break;
+
+        default:
+            nameWeekDay = "такого дня недели не существует";
+            break;
+        }
+
+        return nameWeekDay;
     }
 }
