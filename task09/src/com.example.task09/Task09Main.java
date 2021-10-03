@@ -1,5 +1,7 @@
 package com.example.task09;
 
+import org.omg.CORBA.INTERNAL;
+
 public class Task09Main {
     public static void main(String[] args) {
         //здесь вы можете вручную протестировать ваше решение, вызывая реализуемый метод и смотря результат
@@ -14,8 +16,13 @@ public class Task09Main {
     }
 
     static int min(int[] arr) {
-        //todo напишите здесь свою корректную реализацию этого метода, вместо существующей
-        return 0;
+        int min = Integer.MAX_VALUE;
+        for(int val : arr){
+            if(val < min)
+                min = val;
+        }
+
+        return min;
     }
 
 }
